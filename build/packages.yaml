@@ -1,0 +1,16 @@
+destinationPath: /opt/softwareag/IntegrationServer/packages
+
+repositories:
+
+  - name: my-repo
+    url: https://myrepo.com/git/my-repo.git
+    username: $_GIT_USER
+    password: $_GIT_PASSWORD
+    tag: 1.0.0-rc4-sc1
+
+packages:
+  - repo: my-repo
+    prefix: IS
+    names:
+      - MyPackage1
+      - MyPackage2
